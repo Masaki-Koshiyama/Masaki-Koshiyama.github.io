@@ -1,95 +1,74 @@
-function janken(hand)
+// alert('hogehoge')
+
+let count = 0;
+while (count < 5)
 {
-    let message1 = ''
-
-    if (hand === 0)
-    {
-        message1 = 'グー';
-    }
-    else if (hand === 1)
-    {
-        message1 = 'チョキ';
-    }
-    else if (hand === 2)
-    {
-        message1 = 'パー';
-    }
-    else
-    {
-        message1 = 'エラー';
-    }
-    
-    console.log(message1);
-    const you = document.querySelector('#player');
-    you.textContent = message1;
-
-    let hand2 = Math.floor(Math.random() * 3);
-    let message2 = '';
-
-    if(hand2 === 0)
-    {
-        message2 = 'グー';
-    }
-    else if (hand2 === 1)
-    {
-        message2 = 'チョキ';
-    }
-    else if (hand2 === 2)
-    {
-        message2 = 'パー';
-    }
-    else
-    {
-        message2 = 'エラー';
-    }
-
-    console.log(message2);
-    const me = document.querySelector('#cpu');
-    me.textContent = message2;
-
-    let result = '';
-    if (hand === 0 && hand2 === 0)
-    {
-        result = 'あいこ';
-    }
-    else if (hand === 0 && hand2 === 1)
-    {
-        result = '君の勝ちだ';
-    }
-    else if (hand === 0 && hand2 === 2)
-    {
-        result = '君の負けだ';
-    }
-    else if (hand === 1 && hand2 === 0)
-    {
-        result = '君の負けだ';
-    }
-    else if (hand === 1 && hand2 === 1)
-    {
-        result = 'あいこ';
-    }
-    else if (hand === 1 && hand2 === 2)
-    {
-        result = '君の勝ちだ'
-    }
-    else if (hand === 2 && hand2 === 0)
-    {
-        result = '君の勝ちだ';
-    }
-    else if (hand === 2 && hand2 === 1)
-    {
-        result = '君の負けだ';
-    }
-    else if (hand === 2 && hand2 === 2)
-    {
-        result = 'あいこ';
-    }
-    else
-    {
-        result = 'エラー';
-    }
-
-    console.log(result);
-    const kekka = document.querySelector('#result');
-    kekka.textContent = result;
+    console.log("while文のテスト: "+ count + "回目のループです.")
+    count++;
 }
+
+for (let i = 0; i < 5; i++)
+{
+    console.log("for文のテスト: "+ i + "回目のループです.")
+    
+}
+
+let player_hand = ['グー','チョキ','パー'];
+
+console.log('配列の長さ:' + player_hand.length);
+
+for (let i = 0; i < player_hand.length; i++)
+{
+    console.log(player_hand[i]);
+}
+
+let judge = 0;
+if (judge > 0)
+{
+    console.log('judgeは正の値です.');
+}
+else if (judge === 0)
+{
+    console.log('judgeは0です.');
+}
+else if (judge < 0)
+{
+    console.log('judgeは負の値です.');
+}
+else
+{
+    console.log('judgeは数字ではありません.');
+}
+
+function hello(language)
+{
+    let message = '';
+
+    if (language === 1)
+    {
+        message = 'こんにちは';
+    }
+    else if (language === 2)
+    {
+        message = 'Hello';
+    }
+    else if (language === 3)
+    {
+        message = '你好';
+    }
+    else if (language === 4)
+    {
+        message = '안녕하세요';
+    }
+    else
+    {
+        message = '想定されていない引数です';
+    }
+
+    console.log(message);
+
+    const hogehoge = document.querySelectora('#hello');
+    hogehoge.textContent = message;
+
+}
+
