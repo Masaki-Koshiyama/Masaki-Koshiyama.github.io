@@ -1,0 +1,89 @@
+@charset "UTF-8";
+dl
+{
+    padding: 0.5em;/*文字周りの余白*/
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+    font-size: 32px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.orange
+{
+    font-size: large;
+    font-weight: 700;
+    color: orange;
+}
+.blue
+{
+    font-size: large;
+    font-weight: 700;
+    color: blue;
+}
+.green
+{
+    font-size: large;
+    font-weight: 700;
+    color: green;
+}
+.yellow
+{
+    font-size: large;
+    font-weight: 700;
+    color: yellow;
+}
+.pink
+{
+    font-size: large;
+    font-weight: 700;
+    color: pink;
+}
+.brown
+{
+    font-size: large;
+    font-weight: 700;
+    color: brown;
+}
+.list
+{
+    text-align: center;
+}
+.tetsuya
+{
+    text-align: left;
+    display: inline-block;
+}
+.ryo
+{
+    text-align: left;
+    display: inline-block;
+}
+.toshimitsu
+{
+    text-align: left;
+    display: inline-block;
+}
+.shibayu
+{
+    text-align: left;
+    display: inline-block;
+}
+.yumemaru
+{
+    text-align: left;
+    display: inline-block;
+}
+.mushimegane
+{
+    text-align: left;
+    display: inline-block;
+}
+
+.miryoku
+{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
